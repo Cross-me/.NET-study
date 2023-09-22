@@ -1,0 +1,45 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="wenzhangAdd.aspx.cs" Inherits="wenzhangAdd" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="css/admin.css" rel="stylesheet" />
+    <title></title>
+    <style>
+        #Button1{
+            background-color: #ddd;
+            color: #000;
+            font-size: 14px;
+            width: 50px;
+            height: 30px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            transition: .8s all;
+        }
+        #Button1:hover{
+            background-color: #6495ed;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="add">
+			<div class="addBox">
+				<div class="contentAdd">
+                    <asp:TextBox ID="txtTime" runat="server" placeholder="日期"></asp:TextBox>
+                    <textarea id="TextArea1" runat="server" placeholder="内容"></textarea>
+                    <asp:TextBox ID="txtType" runat="server" placeholder="分类"></asp:TextBox>
+                    <asp:TextBox ID="txtTag" runat="server" placeholder="标签"></asp:TextBox>
+				</div>
+                <div class="contentAddButton">
+                    <asp:Button ID="Button1" runat="server" Text="添加" OnClick="Button1_Click" />
+				</div>
+			</div>
+		</div>
+    </form>
+</body>
+</html>

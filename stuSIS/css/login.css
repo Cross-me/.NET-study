@@ -1,0 +1,81 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.all{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bg{
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../img/21_LunarNewYear3_8k.jpg);
+	background-size: cover;
+	position: fixed;
+	z-index: -1;
+}
+
+.login{
+	width: 350px;
+	background-color: rgba(255, 255, 255, 0.6);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	border-radius: 5px;
+	margin-right: 700px;
+}
+
+h1{
+	margin: 20px 0;
+}
+
+input{
+	border: none;
+	height: 45px;
+	width: 265px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	font-size: 15px;
+	padding-left: 10px;
+	outline: none;
+}
+
+input:hover{
+	background-color: #f2f3fc;
+}
+
+input:focus{
+	background-color: #f2f3fc;
+}
+
+.button {
+	width: 80%;
+	height: 45px;
+	margin: 20px 0 40px 0;
+	border-radius: 30px;
+	background: #7090ed;
+	border: none;
+	color: white;
+	font-size: 15px;
+	cursor: pointer;
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	outline: none;
+}
+
+.button:hover {
+	background-color: #5d80da;
+}
+
+@media (max-width: 1200px) {
+	.login{
+		margin: 0;
+	}
+}
